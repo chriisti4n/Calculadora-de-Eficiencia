@@ -3,19 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_caculadora.css">
-    <title>Calculadora de Eficiencia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style_calculadora.css">
+
+    <title>Calculadora de Eficiência</title>
 </head>
 <body>
-    <div class="calculadora">
-        <h2>Calculadora de Eficiencia</h2>
-        <h3>Horas Planejadas</h3>
-        <input type="number" id="horasPlanejadas" placeholder="Horas Planejadas">
-        <h3>Horas Confirmadas</h3>
-        <input type="number" id="horasConfirmadas" placeholder="Horas Confitmadas">
-        <button onclick="calcularEficiencia()">Resultado</button>
-        <div class="resultado" id="resultado"></div>
+    <div class="cabecalho">
+        <img class="logoDeNora" src="Logo.png" alt="">
     </div>
+    <div class="geral">
+        <div class="container">
+            <div class="eficiencia">
+                <h2>Eficiência</h2>
+                <div class="circulo" id="circulo">
+                    <span id="textoResultado">100%</span>
+                </div>
+            </div>
+            <div class="calculadora">
+                <h2>Calculadora de Eficiência</h2>
+                <h3>Horas Planejadas</h3>
+                <input type="number" id="horasPlanejadas" placeholder="Horas Planejadas">
+                <h3>Horas Confirmadas</h3>
+                <input type="number" id="horasConfirmadas" placeholder="Horas Confirmadas">
+                <button onclick="calcularEficiencia()">Resultado</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="rodape">
+            <p>DNB-OFICINA | Franklin Jeanmonod | Fábio Oliveira</p>
+            <p>2024</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
