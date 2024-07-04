@@ -7,7 +7,7 @@ function calcularEficiencia() {
         return;
     }
 
-    const eficiencia = (horasConfirmadas / horasPlanejadas) * 100;
+    const eficiencia = (horasPlanejadas / horasConfirmadas) * 100;
     const textoResultado = document.getElementById('textoResultado');
     const circuloElement = document.getElementById('circulo');
 
